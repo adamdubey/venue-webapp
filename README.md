@@ -22,4 +22,5 @@ npm run start
 - [Create React App](https://facebook.github.io/create-react-app/)
 - [React.js](https://reactjs.org/)
 - [React Awesome Reveal](https://react-awesome-reveal.morello.dev/)
+- [React Slick](https://react-slick.neostack.com/)
 - [Material UI](https://material-ui.com/)
