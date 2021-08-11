@@ -8,6 +8,9 @@ const App = () => {
     <div className="App">
       <Header />
       <h1>Venue: Live Entertainment</h1>
+      <div style={{backgroundColor: 'red', height: '900px'}}></div>
+      <div style={{backgroundColor: 'yellow', height: '900px'}}></div>
+      <div style={{backgroundColor: 'green', height: '900px'}}></div>
       <Footer />
     </div>
   );

@@ -4,17 +4,30 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SideDrawer from '../SideDrawer/SideDrawer';
 
 const Header = () => {
-    const [drawerOpen, setDrawerOpen] = useState(false)
+    const [drawerOpen, setDrawerOpen] = useState(false);
+    const [headerShow, setHeaderShow] = useState(false);
+
+    const handleScroll = () => {
+        if(window.scrollY > 0) {
+            setHeaderShow(true)
+        } else {
+            setHeaderShow(false)
+        }
+    }
 
     const toggleDrawer = (value) => {
         setDrawerOpen(value)
     }
 
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+    }, [])
+
     return (
             <AppBar
             position="fixed"
             style={{
-                backgroundColor: '#2F2F2F',
+                backgroundColor: headerShow ? '#2F2F2F' : 'transparent',
                 boxShadow: 'none',
                 padding: '10px 0px'
             }}
